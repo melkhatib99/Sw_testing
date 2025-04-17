@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite" verbose="1" parallel="false">
+    <test name="Selected Tests">
+        <classes>
+<!--            <class name="bob.LoginTest"/>-->
+
+            <class name="bob.ProductTest">
+                <methods>
+                    <include name="sorting_low_high"/>
+                    <include name="AddShirt"/>
+                    <include name="RemoveItems"/>
+                    <include name="CartButton"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
